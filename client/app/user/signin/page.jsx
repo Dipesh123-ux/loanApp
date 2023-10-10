@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Link from 'next/link'
 import AuthContext from '@/actions/authContext';
 import { useRouter } from 'next/navigation'
-import SignInPage from '@/components/signin';
+import SignInPage from '@/components/Signin';
 import Loader from '@/components/Loader';
 
 const SignIn = () => {

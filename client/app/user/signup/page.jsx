@@ -2,7 +2,7 @@
 import React, { useState, useContext } from 'react';
 import AuthContext from '@/actions/authContext';
 import { useRouter } from 'next/navigation'
-import SignUpPage from '@/components/signup';
+import SignUpPage from '@/components/Signup';
 import Loader from '@/components/Loader';
 
 const SignUp = () => {

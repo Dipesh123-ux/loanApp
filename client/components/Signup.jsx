@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 const SignUp = ({ handleSubmit, error, values, setValues }) => {
 
-
     return (
         <>
             <div className="flex items-center justify-center min-h-screen">
