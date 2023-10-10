@@ -138,62 +138,6 @@ const AuthState = ({ children }) => {
     return result;
   };
 
-  //   const getSlots = async (data) => {
-  //     const res = await fetch(`${url}/user/getslots`, {
-  //       method: "post",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(data),
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-  //   const addData = async (data) => {
-  //     const res = await fetch(`${url}/user/add`, {
-  //       method: "post",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(data),
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-
-  //   const getUsers = async () => {
-  //     const res = await fetch(`${url}/admin/registrations`, {
-  //       method: "GET",
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-  //   const getRegistration = async (id) => {
-  //     const res = await fetch(`${url}/admin/registration/${id}`, {
-  //       method: "GET",
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-  //   const deleteRegistration = async (id) => {
-  //     const res = await fetch(`${url}/admin/delete/${id}`, {
-  //       method: "delete",
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-  //   const editRegistration = async (id, data) => {
-  //     const res = await fetch(`${url}/admin/registration/${id}`, {
-  //       method: "put",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(data),
-  //     });
-  //     const result = await res.json();
-  //     return result;
-  //   };
-
   return (
     <AuthContext.Provider
       value={{
