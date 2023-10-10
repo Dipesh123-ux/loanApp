@@ -7,8 +7,12 @@ import Link from 'next/link'
 const page = () => {
     const [loans, setLoans] = useState([]);
     const { getLoansByUserId } = useContext(AuthContext);
-   
-    const user = JSON.parse(localStorage.getItem('user'));
+
+    let user;
+
+    if (typeof localStorage !== 'undefined') {
+        user = JSON.parse(localStorage.getItem('user'));
+    }
 
     async function getLoans() {
         const res = await getLoansByUserId(user._id);

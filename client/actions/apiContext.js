@@ -11,10 +11,14 @@ const AuthState = ({ children }) => {
 
 
   const storeUser = (user) => {
+    if (typeof localStorage !== 'undefined') {
     localStorage.setItem("user", JSON.stringify(user));
+    }
   };
   const storeAdmin = (user) => {
+    if (typeof localStorage !== 'undefined') {
     localStorage.setItem("admin", JSON.stringify(user));
+    }
   };
 
   const removeUser = () => {
