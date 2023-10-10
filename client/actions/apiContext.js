@@ -7,7 +7,7 @@ const AuthState = ({ children }) => {
   const [admin, setAdmin] = useState(null);
   const [email, setEmail] = useState("");
 
-  const url = "http://localhost:8080/api";
+  const url = "https://brick-red-seahorse-cuff.cyclic.app/api";
 
 
   const storeUser = (user) => {
